@@ -1,0 +1,46 @@
+h1 {
+    color: rgb(255, 254, 254);
+}
+
+h2 {
+    color: rgb(255, 254, 254);
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+a {
+    margin: 30px;
+    padding: 1200px 0px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 3px 0px #373c3c;
+}
+label {
+    color:rgb(255, 0, 140);
+    
+    
+}
+form input {
+    width: 280px;
+    height: 35px;
+    padding: 0px 10px;
+    margin: 10px 30px;
+    color: #6d6d6d;
+    text-align:center;
+}
+button {
+    width: 135px;
+    height: 50px;
+    margin: 20px 0px 30px 30px;
+}
+td {
+    width: 150px;
+    height: 50px;
+    
+}
+body{
+    image-resolution: 1366 x 768;
+    orientation: horizontal;
+    
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modificar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body background=imagenes/compra3.jpg>
+</body>
+    <br /><br>
+    <form id="formPersonal">
+        <p>
+            <h2 label for="">Nombre:</h2>
+            <input type="text" max-length="20" id="nombre" placeholder="Ingrese el nombre del Producto">
+        </p>
+        <p>
+            <br /><br>
+            <h2 label for="">Marca:</h2>
+            <input type="text" max-length="20" id="marca" placeholder="Ingrese Marca del Producto">
+        </p>
+        <p>
+            <br /><br>
+            <h2 label for="">Cantidad:</h2>
+            <select name="" id="cantidad">
+                <option value="numero" >1</option>
+                <option value="numero" >2</option>
+            </select>
+
+        </p>
+        <p>
+            <br /><br>
+            <h2 label for="">Total: 1500</h2>
+            
+
+        </p>
+    </form>
+    <br /><br>
+    <div class="form-row text-center">
+        <div class="col-12">
+    <button type="Ingresar" class="btn btn-danger" onclick="enviarDatos()">Modificar</button>
+     <div>
+    
+
+    <h3 id="resultado"></h3>
+
+    <script>
+
+        function enviarDatos() {
+
+            let nombre = document.getElementById("nombre").value;
+            let marca = document.getElementById("marca").value;
+            let cantidad = document.getElementById("cantidad").value;
+           
+
+            let request = { nombre: nombre, marca: marca, cantidad: cantidad};
+
+            document.getElementById("resultado").innerHTML = JSON.stringify(request);
+
+            setTimeout(function() {
+                document.getElementById("resultado").innerHTML = JSON.stringify(request) + "...Modificado Exitosamente" 
+            }, 3000);
+            
+         
+
+        }
+       
+       
+    </script>
+     <a button type="Ingresar" class="btn btn-danger" a href= "http://127.0.0.1:5500/verCompra.html" >Volver</button>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ver Compra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body background=imagenes/compra2.png>
+</body>
+   <h1 class="fp-3 mb-2 bg-danger text-center">COMPRA</h1> 
+    <br /><br>
+    <form id="formPersonal">
+        <p>
+            <h2 label for="">Nombre: Marcos</h2>
+            
+        </p>
+        <p>
+            <br><br>
+            <h2 label for="">Apellido: Perez</h2>
+          
+        <p>
+            <br /><br>
+            <h2 label for="">Marca: Nike</h2>
+            
+        </p>
+        </p>
+        
+        <p>
+            <br /><br>
+            <h2 label for="">Cantidad:</h2>
+            <select name="" id="cantidad">
+                <option value="numero" >1</option>
+                <option value="numero" >2</option>
+                <option value="numero" >3</option>
+                <option value="numero" >4</option>
+            </select>
+            </select>
+            </select>
+
+        </p>
+        <p>
+            <br /><br>
+            <h2 label for="">Total: 1500</h2>
+            
+
+        </p>
+    </form>
+    <br /><br>
+    }
+        <a button type="Ingresar" class="btn btn-danger" a href= "http://127.0.0.1:5500/venta.html"  onclick="enviarDatos()" >Volver</button>
+        </a> 
+        
+           
+            
+          <a button type="Ingresar" class="btn btn-danger" a href= "http://127.0.0.1:5500/agregar.html" onclick="enviarDatos()">Agregar</button>
+          </a> 
+    
+          <a button type="Ingresar" class="btn btn-danger" a href= "http://127.0.0.1:5500/eliminar.html" onclick="enviarDatos()">Eliminar</button>
+            
+           </a> 
+    
+          <a button type="Ingresar" class="btn btn-danger" a href= "http://127.0.0.1:5500/modificar.html" onclick="enviarDatos()">Modificar</button>
+            
+            <a button type="Ingresar" class="btn btn-danger" a href= "http://127.0.0.1:5500/compra.html"  onclick="enviarDatos()" >Comprar</button>
+            </a> 
+          
+    
+
+    <h3 id="resultado"></h3>
+
+    <script>
+
+        function enviarDatos() {
+
+            
+
+            setTimeout(function() {
+                document.getElementById("resultado").innerHTML = JSON.stringify(request) + "...Compra exitosa" 
+            }, 3000);
+            
+         
+
+        }
+        
+    
+    </script>
+    
+</body>
+
+</html>
